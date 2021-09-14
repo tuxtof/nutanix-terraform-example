@@ -1,0 +1,7 @@
+#cloud-config
+users:
+  - name: cris
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDlfKTtInCh+d9S2Jt8lW0vo/yMBsVoACyeqRjdEpG/XOQK6DgN4gx+tUIe85sRFS2xAEybfPwMS03tfgUef/G+MDDxzeUQPJbhxC/9/4wMEPwsdcwfCIV1CSSb+vnIRQXbssqG/wup4nT5FoQ1UauAKdnYs6dQhHMCCFmUxASn7zlij1S/im73uE0y2P9+JoEg+7jo68+GlbvnTVr4lQ33rcUfCDn9MXyR+ZSM/mka0/TyeuGdvKTj6QCxs58rpQ3NOFj9TyLWnuDK5of8We6a5cGMr9hgJY6ILTMzyOSgM5Cae7xCXF+Gas2me1flN5xLQgyfOHJL8VYaUNE7EpHZ cris@geo6.net
+    sudo: ["ALL=(ALL) NOPASSWD:ALL"]
+final_message : "VM is running, after $UPTIME seconds"
